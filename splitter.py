@@ -16,9 +16,6 @@ def printUsageInfo():
 
 
 def userInput(argv=None):
-	'''
-	Use getopt -> argv to get parameters from command line and check if they are valid
-	'''
 	files = []
 
 	if argv is None:
@@ -33,7 +30,6 @@ def userInput(argv=None):
 		#print usage info
 		if o in ("-h", "--help"):
 			printUsageInfo()
-		#get preisach parameters and check their validity
 		if o in ("-i", "--input"):
 			files.append(str(a))
 			
